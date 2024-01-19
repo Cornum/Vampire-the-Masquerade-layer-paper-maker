@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    margin-top: 10px;
+}
+#header{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+header{
+    text-align: center;
+    background-color: #ECEFF1;
+}
+#footer{
+    display: flex;
+    justify-content: center;
+}
+footer{
+    background-color: wheat;
+}
+.nameSpaceNormal{
+    font-family: 'Oswald', sans-serif;
+    font-size: 80px;
+}
+.nameSpaceLower{
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+}
+.nameSpaceEvenLower{
+    font-family: 'Oswald', sans-serif;
+    font-size: 45px;
+}
+
+.labelText{
+    font-family: 'Oswald', sans-serif;
+    display: inline-block;
+}
+.inputText{
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    border: 0;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    background: none;
+    outline: none;
+}
+
+.td1, .td2{
+    padding-right: 30px;
+}
+
+.vampireLogo{
+    width: 28px;
+}
