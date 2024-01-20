@@ -3,52 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" id="themeStyles">
     <link rel="shortcut icon" href="icon.jpg" type="image/x-icon">
     <script src="app.js" defer></script>
     <title>Person list Vampire the Masquerade</title>
 </head>
 <body>
     <div class = "container">
-        <div id="header">
-            <header>
+        <div id="header"> <!-- Top level information -->
+            <div class="header">
                 <table>
                     <tr id="mainInfo">
                         <td class="td1">
-                            <label for="playerName" class="labelText infoPlayer">Player: </label>
-                            <input type="text" id="playerName" class="inputText infoPlayer">
+                            <label for="playerName" class="labelText">Player: </label>
+                            <input type="text" id="playerName" class="inputText">
 
-                            <label for="personName" class="labelText infoName">Name: </label>
-                            <input type="text" id="personName" class="inputText infoName">
+                            <label for="personName" class="labelText">Name: </label>
+                            <input type="text" id="personName" class="inputText">
 
-                            <label for="generation" class="labelText infoGen">Generation: </label>
-                            <input type="text" id="generation" class="inputText infoGen">
+                            <label for="generation" class="labelText">Generation: </label>
+                            <input type="text" id="generation" class="inputText">
 
-                            <label for="sir" class="labelText infoSir">Sir: </label>
-                            <input type="text" id="sir" class="inputText infoSir">
+                            <label for="sir" class="labelText">Sir: </label>
+                            <input type="text" id="sir" class="inputText">
                         </td>
                         <td class="td2">
-                            <div class="nameSpaceEvenLower">classic rules</div>
-                            <div class="nameSpaceNormal">Vampire</div>
-                            <div class="nameSpaceLower"><img src="LogoVampire.jpg" class="vampireLogo" alt="Vampire icon"> the Masquerade <img src="LogoVampire.jpg" class="vampireLogo" alt="Vampire icon"></div>
+                            <div class="textBig">classic rules</div>
+                            <div class="textVampire">Vampire</div>
+                            <div class="textMasquerade"><img src="LogoVampire.jpg" id="masqueradeLogoLeft" class="vampireLogo" alt="Vampire icon"> the Masquerade <img src="LogoVampire.jpg" id="masqueradeLogoRight" class="vampireLogo" alt="Vampire icon"></div>
                         </td>
                         <td class="td3">
-                            <label for="nature" class="labelText infoNature">Nature: </label>
-                            <input type="text" id="nature" class="inputText infoNature">
+                            <label for="nature" class="labelText">Nature: </label>
+                            <input type="text" id="nature" class="inputText">
 
-                            <label for="mask" class="labelText infoMask">Mask: </label>
-                            <input type="text" id="mask" class="inputText infoMask">
+                            <label for="mask" class="labelText">Mask: </label>
+                            <input type="text" id="mask" class="inputText">
 
-                            <label for="amplua" class="labelText infoAmplua">Amplua: </label>
-                            <input type="text" id="ampua" class="inputText infoAmplua">
+                            <label for="amplua" class="labelText">Amplua: </label>
+                            <input type="text" id="ampua" class="inputText">
                             
-                            <label for="clan" class="labelText infoClan">Clan: </label>
-                            <input type="text" id="clan" class="inputText infoClan">
+                            <label for="clan" class="labelText">Clan: </label>
+                            <input type="text" id="clan" class="inputText">
                         </td>
                     </tr>
                 </table>
-            </header>
+            </div>
         </div>
+        <div id="characteristics">  <!-- Player main characteristics-->
+            <div class="characteristics">
+                <p style="border: 3px solid black;"></p>  <!-- Remove later> -->
+                <div class="textBig textRubric">Characteristics</div>
+                <table>
+                    <thead>
+                        <th>
+                            <label for="Physical">Physical</label>
+                            <input type="text" id="Physical" class="inputTextTHead">
+                        </th>
+                        <th>
+                            <label for="Social">Social</label>
+                            <input type="text" id="Social" class="inputTextTHead">
+                        </th>
+                        <th>
+                            <label for="Mental">Mental</label>
+                            <input type="text" id="Mental" class="inputTextTHead">
+                        </th>
+                    </thead>
+                    <tr>
+                        <td class="td1">
+                            <label for="Strength" class="infoCharacteristics">Strength</label>
+                            <input type="number" name="pointsPhysical" id="Strength" class="inputNumber" max="5" value="1">
+
+                            <label for="Agility" class="infoCharacteristics">Agility</label>
+                            <input type="number" name="pointsPhysical" id="Agility" class="inputNumber" max="5" value="1">
+
+                            <label for="Stamina" class="infoCharacteristics">Stamina</label>
+                            <input type="number" name="pointsPhysical" id="Stamina" class="inputNumber" max="5" value="1">
+                        </td>
+                        <td class="td2">
+                            <label for="Charm" class="infoCharacteristics">Charm</label>
+                            <input type="number" name="pointsSocial" id="Charm" class="inputNumber" max="5" value="1">
+                            
+                            <label for="Manipulation" class="infoCharacteristics">Manipulation</label>
+                            <input type="number" name="pointsSocial" id="Manipulation" class="inputNumber" max="5" value="1">
+
+                            <label for="Attractiveness" class="infoCharacteristics">Attractiveness</label>
+                            <input type="number" name="pointsSocial" id="Attractiveness" class="inputNumber" max="5" value="1">
+                        </td>
+                        <td class="td3">
+                            <label for="Perception" class="infoCharacteristics">Perception</label>
+                            <input type="number" name="pointsMental" id="Perception" class="inputNumber" max="5" value="1">
+
+                            <label for="Intellect" class="infoCharacteristics">Intellect</label>
+                            <input type="number" name="pointsMental" id="Intellect" class="inputNumber" max="5" value="1">
+
+                            <label for="Wit" class="infoCharacteristics">Wit</label>
+                            <input type="number" name="pointsMental" id="Wit" class="inputNumber" max="5" value="1">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
 
         <div id="footer">
             <footer>

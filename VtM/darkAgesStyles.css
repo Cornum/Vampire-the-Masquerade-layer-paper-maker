@@ -1,3 +1,5 @@
+/* To-Do: change all style to medieval version */
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 *{
     margin: 0;
@@ -29,7 +31,8 @@
     justify-content: center;
 }
 footer{
-    background-color: wheat;
+    background-color: #252525;
+    color: whitesmoke;
 }
 
 
