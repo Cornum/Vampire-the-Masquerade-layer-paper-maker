@@ -1,5 +1,3 @@
-/* To-Do: change all style to medieval version */
-
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 *{
     margin: 0;
@@ -34,6 +32,15 @@ footer{
     background-color: #252525;
     color: whitesmoke;
 }
+#abilities{
+    display: flex;
+    justify-content: center;
+}
+.abilities{
+    text-align: center;
+    background-color: bisque;
+}
+
 
 
 
@@ -84,6 +91,7 @@ footer{
     margin-bottom: 20px;
     background: none;
     outline: none;
+    text-align: center;
 }
 
 .td1, .td2{

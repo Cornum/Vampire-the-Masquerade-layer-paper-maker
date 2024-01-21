@@ -49,23 +49,23 @@
                 </table>
             </div>
         </div>
-        <div id="characteristics">  <!-- Player main characteristics-->
+        <div id="characteristics">  <!-- Player main characteristics   7/5/3-->
             <div class="characteristics">
-                <p style="border: 3px solid black;"></p>  <!-- Remove later> -->
+                <p style="border: 3px solid black"></p>  <!-- Remove later> -->
                 <div class="textBig textRubric">Characteristics</div>
                 <table>
                     <thead>
                         <th>
-                            <label for="Physical">Physical</label>
-                            <input type="text" id="Physical" class="inputTextTHead">
+                            <label for="physical">Physical</label>
+                            <input type="text" id="physical" class="inputTextTHead">
                         </th>
                         <th>
-                            <label for="Social">Social</label>
-                            <input type="text" id="Social" class="inputTextTHead">
+                            <label for="social">Social</label>
+                            <input type="text" id="social" class="inputTextTHead">
                         </th>
                         <th>
-                            <label for="Mental">Mental</label>
-                            <input type="text" id="Mental" class="inputTextTHead">
+                            <label for="mental">Mental</label>
+                            <input type="text" id="mental" class="inputTextTHead">
                         </th>
                     </thead>
                     <tr>
@@ -104,6 +104,115 @@
             </div>
         </div>
 
+        <div id="abilities">   <!--13/9/5  main gameplay abilities + 2 for each column-->
+            <div class="abilities">
+                <p style="border: 3px solid black"></p>  <!-- Remove later> -->
+                <div class="textBig textRubric">Abilities</div>
+                <table>
+                    <thead>
+                        <th>
+                            <label for="talents">Talents</label>
+                            <input type="text" id="talents" class="inputTextTHead">
+                        </th>
+                        <th>
+                            <label for="skills">Skills</label>
+                            <input type="text" id="skills" class="inputTextTHead">
+                        </th>
+                        <th>
+                            <label for="knowledge">Knowledge</label>
+                            <input type="text" id="knowledge" class="inputTextTHead">
+                        </th>
+                    </thead>
+                    <tr>
+                        <td class="td1">
+                            <label for="Athletics" class="infoCharacteristics">Athletics</label>
+                            <input type="number" name="pointsTalents" id="Athletics" class="inputNumber" max="5" value="1">
+
+                            <label for="Vigilance" class="infoCharacteristics">Vigilance</label>
+                            <input type="number" name="pointsTalents" id="Vigilance" class="inputNumber" max="5" value="1">
+
+                            <label for="Fight" class="infoCharacteristics">Fight</label>
+                            <input type="number" name="pointsTalents" id="Fight" class="inputNumber" max="5" value="1">
+
+                            <label for="Intimidation" class="infoCharacteristics">Intimidation</label>
+                            <input type="number" name="pointsTalents" id="Intimidation" class="inputNumber" max="5" value="1">
+
+                            <label for="Eloquence" class="infoCharacteristics">Eloquence</label>
+                            <input type="number" name="pointsTalents" id="Eloquence" class="inputNumber" max="5" value="1">
+
+                            <label for="Leadership" class="infoCharacteristics">Leadership</label>
+                            <input type="number" name="pointsTalents" id="Leadership" class="inputNumber" max="5" value="1">
+
+                            <label for="Street" class="infoCharacteristics">Street flair</label>
+                            <input type="number" name="pointsTalents" id="Street" class="inputNumber" max="5" value="1">
+
+                            <label for="Trick" class="infoCharacteristics">Trick</label>
+                            <input type="number" name="pointsTalents" id="Trick" class="inputNumber" max="5" value="1">
+
+                            <label for="Sence" class="infoCharacteristics">Sixth sence</label>
+                            <input type="number" name="pointsTalents" id="Sence" class="inputNumber" max="5" value="1">
+
+                            <label for="Empathy" class="infoCharacteristics">Empathy</label>
+                            <input type="number" name="pointsTalents" id="Empathy" class="inputNumber" max="5" value="1">
+                        </td>
+                        <td class="td2">
+                            <label for="Driving" class="infoCharacteristics">Driving</label>
+                            <input type="number" name="pointsSkills" id="Driving" class="inputNumber" max="5" value="1">
+
+                            <label for="Theft" class="infoCharacteristics">Theft</label>
+                            <input type="number" name="pointsSkills" id="Theft" class="inputNumber" max="5" value="1">
+
+                            <label for="Survival" class="infoCharacteristics">Survival</label>
+                            <input type="number" name="pointsSkills" id="Survival" class="inputNumber" max="5" value="1">
+
+                            <label for="Performance" class="infoCharacteristics">Performance</label>
+                            <input type="number" name="pointsSkills" id="Performance" class="inputNumber" max="5" value="1">
+
+                            <label for="Handling" class="infoCharacteristics">Animal handling</label>
+                            <input type="number" name="pointsSkills" id="Handling" class="inputNumber" max="5" value="1">
+
+                            <label for="Craft" class="infoCharacteristics">Craft</label>
+                            <input type="number" name="pointsSkills" id="Craft" class="inputNumber" max="5" value="1">
+
+                            <label for="Stealth" class="infoCharacteristics">Stealth</label>
+                            <input type="number" name="pointsSkills" id="Stealth" class="inputNumber" max="5" value="1">
+
+                            <label for="Shooting" class="infoCharacteristics">Shooting</label>
+                            <input type="number" name="pointsSkills" id="Shooting" class="inputNumber" max="5" value="1">
+
+                            <label for="Fencing" class="infoCharacteristics">Fencing</label>
+                            <input type="number" name="pointsSkills" id="Fencing" class="inputNumber" max="5" value="1">
+
+                            <label for="Etiquette" class="infoCharacteristics">Etiquette</label>
+                            <input type="number" name="pointsSkills" id="Etiquette" class="inputNumber" max="5" value="1">
+                        </td>
+                        <td class="td3">
+                            <label for="Humanities" class="infoCharacteristics">Humanities</label>
+                            <input type="number" name="pointsKnowledge" id="Humanities" class="inputNumber" max="5" value="1">
+                            <label for="NSciences" class="infoCharacteristics">Natural Sciences</label>
+                            <input type="number" name="pointsKnowledge" id="NSciences" class="inputNumber" max="5" value="1">
+                            <label for="Laws" class="infoCharacteristics">Laws</label>
+                            <input type="number" name="pointsKnowledge" id="Laws" class="inputNumber" max="5" value="1">
+                            <label for="CSciences" class="infoCharacteristics">Computer Sciences</label>
+                            <input type="number" name="pointsKnowledge" id="CSciences" class="inputNumber" max="5" value="1">
+                            <label for="Medicine" class="infoCharacteristics">Medicine</label>
+                            <input type="number" name="pointsKnowledge" id="Medicine" class="inputNumber" max="5" value="1">
+                            <label for="Occultism" class="infoCharacteristics">Occultism</label>
+                            <input type="number" name="pointsKnowledge" id="Occultism" class="inputNumber" max="5" value="1">
+                            <label for="Politics" class="infoCharacteristics">Politics</label>
+                            <input type="number" name="pointsKnowledge" id="Politics" class="inputNumber" max="5" value="1">
+                            <label for="Investigation" class="infoCharacteristics">Investigation</label>
+                            <input type="number" name="pointsKnowledge" id="Investigation" class="inputNumber" max="5" value="1">
+                            <label for="Finance" class="infoCharacteristics">Finance</label>
+                            <input type="number" name="pointsKnowledge" id="Finance" class="inputNumber" max="5" value="1">
+                            <label for="Electronics" class="infoCharacteristics">Electronics</label>
+                            <input type="number" name="pointsKnowledge" id="Electronics" class="inputNumber" max="5" value="1">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
 
 
         <div id="footer">
@@ -111,6 +220,8 @@
                 <label for="clan" class="labelText infoClan">Lorem, ipsum.: </label>
                 <input type="text" id="clan" value="Lorem, ipsum" class="inputText infoClan">
                 <button type="button" class="Btn" id="send">Lorem, ipsum.</button>
+
+                <button type="button" class="Btn" id="release">Release</button>
             </footer>
         </div>
     </div>

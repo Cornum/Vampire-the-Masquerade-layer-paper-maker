@@ -31,6 +31,15 @@
 footer{
     background-color: wheat;
 }
+#abilities{
+    display: flex;
+    justify-content: center;
+}
+.abilities{
+    text-align: center;
+    background-color: bisque;
+}
+
 
 
 
@@ -81,6 +90,7 @@ footer{
     margin-bottom: 20px;
     background: none;
     outline: none;
+    text-align: center;
 }
 
 .td1, .td2{
